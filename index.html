@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Destinations</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,33 +29,64 @@
             <div class="destinations-grid">
                 <div class="destination">
                     <a href="grand-canyon.html">
-                        <img src="\pictures\image2.jpg" alt="Grand Canyon">
+                        <img src="pictures/image2.jpg" alt="Grand Canyon">
                         <h3>Grand Canyon</h3>
                         <p>Experience the breathtaking vistas of the Grand Canyon.</p>
                     </a>
                 </div>
                 <div class="destination">
                     <a href="paris.html">
-                        <img src="\pictures\image1.jpg" alt="Paris">
+                        <img src="pictures/image1.jpg" alt="Paris">
                         <h3>Paris</h3>
                         <p>Discover the art, fashion, and culture of Paris.</p>
                     </a>
                 </div>
                 <div class="destination">
                     <a href="new-york.html">
-                        <img src="\pictures\image3.jpg" alt="New York">
+                        <img src="pictures/image3.jpg" alt="New York">
                         <h3>New York</h3>
                         <p>Experience the vibrant culture and iconic landmarks of New York City.</p>
                     </a>
                 </div>
                 <div class="destination">
                     <a href="switzerland.html">
-                        <img src="\pictures\image4.avif" alt="Switzerland">
+                        <img src="pictures/image4.avif" alt="Switzerland">
                         <h3>Switzerland</h3>
                         <p>Explore the beautiful landscapes and charming villages of Switzerland.</p>
                     </a>
                 </div>
             </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry">Type of Inquiry:</label>
+                    <select class="form-control" id="inquiry" name="inquiry">
+                        <option value="general">General Inquiry</option>
+                        <option value="booking">Booking</option>
+                        <option value="support">Support</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </section>
     </main>
 

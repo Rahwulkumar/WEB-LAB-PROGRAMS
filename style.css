@@ -39,8 +39,8 @@ header {
 
 .destinations-grid {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -49,7 +49,11 @@ header {
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    width: 23%;
+    flex: 1 1 calc(25% - 40px);
+    /* Adjusts based on screen size */
+    box-sizing: border-box;
+    max-width: calc(25% - 40px);
+    /* Adjusts based on screen size */
 }
 
 .destination img {
@@ -75,6 +79,49 @@ header {
     text-decoration: underline;
 }
 
+.contact-form {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -86,6 +133,7 @@ footer {
 footer ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 footer ul li {
@@ -100,4 +148,19 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .destination {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .destination {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
