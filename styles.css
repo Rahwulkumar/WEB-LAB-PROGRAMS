@@ -7,6 +7,10 @@
     font-family: "Urbanist", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bs-dark-primary: #1c1c1c;
     --bs-main-color: #fff;
@@ -62,14 +66,20 @@ a {
 
 .nav-link {
     color: var(--bs-main-color) !important;
+    font-weight: 500;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--secondary-color) !important;
+    text-decoration: underline;
 }
 
-
-/* WEB PAGES HERO SECTION STARTS */
+.common-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+}
 
 .hero-section .container {
     display: grid;
@@ -78,7 +88,8 @@ a {
 }
 
 .bg-main {
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     position: relative;
 }
 
@@ -97,7 +108,6 @@ a {
 
 ._hero-video--section {
     max-width: 100%;
-    /* height: auto; */
     width: 60rem;
     border-radius: 2rem;
 }
@@ -122,4 +132,182 @@ a {
 
 .custom-shape-divider-bottom-1722701657 .shape-fill {
     fill: #FFFFFF;
+}
+
+.services-section {
+    padding: 6rem 0 3rem 0 !important;
+}
+
+.icon-span {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--bs-main-color);
+}
+
+.card-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.card-box:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    transform: translateY(-5px);
+}
+
+.card-box .card-body {
+    flex-grow: 1;
+}
+
+/* more info section */
+
+.more-info-section {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.more-info-section .img-section {
+    position: relative;
+}
+
+.more-info-section .img-section img {
+    width: 70%;
+}
+
+/* carousel */
+
+.carousel .card {
+    background-color: #262631;
+    color: var(--bs-main-color);
+    transition: all 0.3s linear;
+}
+
+.carousel-inner .card p {
+    color: var(--bs-main-color);
+}
+
+.carousel-inner .card:hover {
+    background: var(--bs-main-color);
+    color: var(--bs-dark-color);
+}
+
+.carousel-inner .card:hover p {
+    color: var(--bs-dark-color);
+}
+
+.fa-star {
+    color: var(--bs-supporting-color);
+}
+
+.carousel-indicators {
+    bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target] {
+    margin-top: 2rem;
+    width: .7rem;
+    height: .7rem;
+    background-color: #1089ff;
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .common-heading {
+        font-size: 2rem;
+    }
+
+    ._hero-video--section {
+        width: 100%;
+    }
+
+    .carousel-indicators {
+        bottom: -10%;
+    }
+}
+
+.contact-form-section {
+    background-color: var(--bs-dark-primary);
+    padding: 60px 0;
+}
+
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.services-page {
+    background-color: var(--bs-dark-primary);
+    padding: 60px 0;
+}
+
+.card {
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: var(--bs-main-color);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--bs-dark-primary);
+}
+
+.card-text {
+    color: var(--bs-dark-primary);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
