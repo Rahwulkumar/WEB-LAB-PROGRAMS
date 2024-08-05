@@ -369,3 +369,86 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.carousel slide{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Carousel Section */
+.carousel-section {
+    background-color: var(--bs-dark-primary);
+    /* Ensures the section background matches the dark theme */
+    padding: 6rem 0;
+    /* Adjust padding as needed */
+}
+
+/* Carousel Container */
+.carousel-inner {
+    background-color: var(--bs-dark-primary);
+    /* Matches the dark theme */
+}
+
+.carousel-item {
+    padding: 2rem;
+    /* Adds padding inside each carousel item */
+}
+
+.carousel-item .testimonial-card {
+    background-color: #262631;
+    /* Matches the card background */
+    color: var(--bs-main-color);
+    /* Ensures text color is readable */
+    padding: 2rem;
+    /* Adds padding inside each testimonial card */
+    border-radius: 0.5rem;
+    /* Rounded corners for the cards */
+}
+
+.carousel-item .testimonial-card .rating {
+    color: var(--bs-supporting-color);
+    /* Star color */
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    bottom: -15%;
+    /* Adjusted for better alignment */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: .8rem;
+    /* Slightly larger for better visibility */
+    height: .8rem;
+    background-color: var(--secondary-color);
+    /* Matches the theme */
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Adjust width for better control size */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--secondary-color);
+    /* Control button color */
+    border-radius: 50%;
+    /* Rounded control buttons */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-indicators {
+        bottom: -10%;
+        /* Adjust for mobile view */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+        /* Increase control button size on smaller screens */
+    }
+}

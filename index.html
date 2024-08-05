@@ -38,24 +38,19 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark py-5 pt-lg-5">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html"><svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background Circle -->
-                <circle cx="100" cy="100" r="90" stroke="black" stroke-width="5" fill="#f0f0f0" />
-            
-                <!-- Main Text -->
-                <text x="50%" y="50%" text-anchor="middle" stroke="#000" stroke-width="1px" dy=".3em" font-size="36"
-                    font-family="Arial" fill="#000">
-                    1%
-                </text>
-            
-                <!-- Tagline Text -->
-                <text x="50%" y="60%" text-anchor="middle" font-size="18" font-family="Arial" fill="#000">
-                    Percenters
-                </text>
-            
-                <!-- Optional Decorative Element (e.g., line) -->
-                <line x1="30" y1="150" x2="170" y2="150" stroke="#000" stroke-width="2" />
-            </svg>
+            <a class="navbar-brand text-white" href="index.html">
+                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="100" cy="100" r="90" stroke="black" stroke-width="5" fill="#f0f0f0" />
+                    <!-- Main Text -->
+                    <text x="50%" y="50%" text-anchor="middle" stroke="#000" stroke-width="1px" dy=".3em" font-size="36"
+                        font-family="Arial" fill="#000">1%</text>
+                    <!-- Tagline Text -->
+                    <text x="50%" y="60%" text-anchor="middle" font-size="18" font-family="Arial"
+                        fill="#000">Percenters</text>
+                    <!-- Optional Decorative Element (e.g., line) -->
+                    <line x1="30" y1="150" x2="170" y2="150" stroke="#000" stroke-width="2" />
+                </svg>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -106,7 +101,6 @@
             </svg>
         </div>
     </section>
-
     <!-- Service Section -->
     <section class="services-section">
         <div class="container text-center common-title fw-bold">
@@ -119,11 +113,9 @@
                     <div class="text-center card-box rounded-2 p-5 shadow">
                         <img src="./images/link.gif" alt="link" class="img-fluid">
                         <h5 class="my-3 fw-normal">Contact</h5>
-                        <p class="mb-5">Have questions or need more information? We're here to help!
-                        
-                        Email Us
-                        For inquiries or support, please send us an email at support@1percenters.com. Our team is available to assist you with
-                        any questions or concerns you may have.</p>
+                        <p class="mb-5">Have questions or need more information? We're here to help!<br>Email Us<br>For
+                            inquiries or support, please send us an email at support@1percenters.com. Our team is
+                            available to assist you with any questions or concerns you may have.</p>
                         <div class="d-flex justify-content-center align-items-center">
                             <a href="contact.html"
                                 class="icon-span rounded-circle d-flex justify-content-center align-items-center">
@@ -137,8 +129,9 @@
                     <div class="text-center card-box rounded-2 p-5 shadow">
                         <img src="./images/map.gif" alt="map" class="img-fluid">
                         <h5 class="my-3 fw-normal">Location</h5>
-                        <p class="mb-5">Located in the heart of Finance City, our office is easily accessible and conveniently situated for all your trading
-                        needs. Whether you're coming from downtown or the suburbs, our central location ensures you can reach us with ease.</p>
+                        <p class="mb-5">Located in the heart of Finance City, our office is easily accessible and
+                            conveniently situated for all your trading needs. Whether you're coming from downtown or the
+                            suburbs, our central location ensures you can reach us with ease.</p>
                         <div class="d-flex justify-content-center align-items-center">
                             <a href="maps.html"
                                 class="icon-span rounded-circle d-flex justify-content-center align-items-center">
@@ -168,110 +161,76 @@
     </section>
     <!-- Service Section Ends -->
 
-    <section class="bg-dark more-info-section">
+    <!-- Testimonial Carousel Section -->
+    <section class="testimonial-section py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 img-section">
-                    <figure>
-                        <img src="./images/phone.gif" alt="digital product" class="img-fluid">
-                    </figure>
+                <div class="col-12 text-center mb-4">
+                    <h2 class="fw-bold">What Our Clients Say</h2>
                 </div>
-
-                <div class="col-12 col-md-12 col-lg-6">
-                    <h1 class="text-capitalize fw-bolder text-white common-heading">Be a part of the elite!</h1>
-                    <p class="mt-3 mb-5 para-width text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Error, deleniti aperiam, reprehenderit quam nam in at rerum magnam ex autem dolor necessitatibus
-                        minima ab minus eos eligendi odit quod animi! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Porro quisquam iure quas, facere omnis adipisci libero praesentium dicta tempore aliquid
-                        in ea velit blanditiis ipsam exercitationem nihil provident eveniet fugit!</p>
-                    <div class="text-center w-100 text-md-start">
-                        <a href="#" class="btn btn-primary px-5 py-2 text-capitalize" title="Contact Now">Contact
-                            Now</a>
+                <div id="testimonialCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="testimonial-card text-center shadow p-4 bg-white rounded">
+                                    <p class="testimonial-text">"Excellent service! The team at 1% Percenters is
+                                        top-notch and truly cares about their clients. Highly recommend!"</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-author mt-2">- John Doe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="testimonial-card text-center shadow p-4 bg-white rounded">
+                                    <p class="testimonial-text">"The resources and guidance provided by 1% Percenters
+                                        have been instrumental in my trading success. Thank you!"</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-author mt-2">- Jane Smith</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items here -->
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Testimonial Section -->
-    <section class="common-section mb-5 pt-5 bg-dark">
-        <div class="container text-center common-title">
-            <h2 class="common-heading text-white">What Clients Say<br>About Us</h2>
-            <hr class="w-25 mx-auto bg-white">
-        </div>
-        <div class="container mt-5">
-            <div class="row g-5">
-                <div class="col-12 col-lg-4 col-md-12">
-                    <div class="testimonial-card text-center rounded-3 p-4 shadow bg-light">
-                        <div class="rating d-flex justify-content-center mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, saepe odit libero
-                            explicabo sint deserunt esse, voluptatibus quidem magni? Repudiandae minima consectetur
-                            molestias officiis.</p>
-                        <p class="fw-bold">John Doe</p>
-                        <p>Businessman</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-12">
-                    <div class="testimonial-card text-center rounded-3 p-4 shadow bg-light">
-                        <div class="rating d-flex justify-content-center mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, saepe odit libero
-                            explicabo sint deserunt esse, voluptatibus quidem magni? Repudiandae minima consectetur
-                            molestias officiis.</p>
-                        <p class="fw-bold">Jane Doe</p>
-                        <p>Entrepreneur</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-12">
-                    <div class="testimonial-card text-center rounded-3 p-4 shadow bg-light">
-                        <div class="rating d-flex justify-content-center mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, saepe odit libero
-                            explicabo sint deserunt esse, voluptatibus quidem magni? Repudiandae minima consectetur
-                            molestias officiis.</p>
-                        <p class="fw-bold">Alice Smith</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial Section Ends -->
-
-    <section class="bg-dark contact-info-section">
-        <div class="container text-center">
-            <h2 class="text-white">Get in Touch</h2>
-            <p class="text-light">We would love to hear from you. Please reach out to us with any questions or feedback.
-            </p>
-            <a href="contact.html" class="btn btn-primary text-capitalize">Contact Us</a>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-center text-white py-4">
-        <p>&copy; 2024 1% Percenters. All rights reserved.</p>
-    </footer>
+    <!-- Testimonial Carousel Section Ends -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        integrity="sha384-pF+5G4d/FsHsUd5+ZxK/Gaa6EK/yNQnUJz0KxO8XaIt1/yxIcJ/0t30/ZqbcP0WJ"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
